@@ -4,11 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"
+    <link rel="stylesheet" href="styles.css">
     <title>PaintJS</title>
 </head>
 <body>
-    <script src="app.js">
-    </script>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="controls">
+        
+        <div class="controls_colors" id="jsColors">
+            <div class="controls_color" style="background-color: black;"></div>
+            <div class="controls_color" style="background-color: white;"></div>
+            <div class="controls_color" style="background-color: #ff3b30;"></div>
+            <div class="controls_color" style="background-color: rgb(253, 144, 18);"></div>
+            <div class="controls_color" style="background-color: rgb(240, 210, 40);"></div>
+            <div class="controls_color" style="background-color: rgb(73, 163, 113);"></div>
+            <div class="controls_color" style="background-color: rgb(40, 111, 218);"></div>
+            <div class="controls_color" style="background-color: rgb(147, 56, 233);"></div>
+            <div class="controls_color" style="background-color: rgb(222, 98, 226);"></div>
+        </div>
+        <div class="controls_range">
+            <input 
+            class="range"
+            type="range" 
+            id="jsRange" 
+            min="0.1" 
+            max="5" 
+            value="2.5"
+            step="0.1"
+            />
+        </div> 
+        <div class="controls_btns">
+            <button id="jsMode">Fill</button>
+            <button id="jsSave">Save</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>

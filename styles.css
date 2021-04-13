@@ -1,0 +1,84 @@
+@import "reset.css";
+
+body {
+  background-color: #f6f9fc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.canvas {
+  width: 600px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(50, 50, 93, 0.1), 0 1px 3px rgba(0, 0, 9, 0.1);
+}
+
+.controls {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .controls_colors {
+  display: flex;
+}
+
+.controls_colors .controls_color {
+  width: 50px;
+  height: 50px;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(50, 50, 93, 0.1), 0 1px 3px rgba(0, 0, 9, 0.1);
+  border-radius: 50%;
+}
+
+.controls .controls_range {
+  margin-top: 40px;
+}
+
+.controls .controls_range .range {
+  -webkit-appearance: none;
+  outline: none;
+  width: 500px;
+  height: 10px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.controls .controls_range .range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.controls .controls_btns {
+  margin-top: 40px;
+}
+
+.controls_btns button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 1rem 0;
+  width: 120px;
+  border-radius: 10%;
+  text-align: center;
+  margin: 0 0.25rem;
+  box-shadow: 0 8px 16px rgba(50, 50, 93, 0.1);
+  transition: all 0.2s;
+}
+
+.controls_btns button:hover {
+  transform: scale(0.95);
+}
